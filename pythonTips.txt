@@ -1,0 +1,242 @@
+----- PEP8 -----
+Project specific > general
+Why is it important? Code is read more than it is written
+Take it with a pinch of salt
+4 spaces at indentation level
+continuation lines should be vertical or hanging indentation
+4 space rule is optional for continuation lines
+closing multiline brackets
+spaces > tabs. Set up your IDE so that tab == 4 spaces
+79 character line length Max <- code editors and vcs
+72 line length max for flowing blocks of text
+up to 99 at team discretion
+continuation > backslash
+line breaks before the operators
+top level functions and classes need two blank lines
+class methods need one blank line
+blank lines can be used to break up code logically
+imports on separate lines
+but from imports on same line
+imports after module docstrings
+before global constants
+standard lib imports
+related third party imports
+local/library imports
+avoid star Importing
+module-level dunder after dosctring but before imports (except from __future__)
+consistent string quotes
+triple string quotes use double quotes
+no extra whitespace immediately inside parentheses
+no ws after a comma before closing parenthesis
+no ws before a colon, semicolon, or comma
+exception to ws before or after a colon in a slice
+no ws before parenthesis for argument call
+no ws before parenthesis for slicing or indexing
+no extra ws to align assignment
+avoid trailing whitespace
+boolean operators, assignments, and comparisons have whitespace either side
+use whitespace to show operator priority
+no spaces for default arguments or keyword arguments except with function annotations
+compound statements are discouraged
+trailing commas on multiline brackets
+out of date comments are a no no
+comments should be complete sentences
+two spaces after multi-sentence comments fullstop
+spaces after # comment indicator
+inline comments sparingly
+indent suite comments to the right indentation
+inline comments at least two spaces from the statement
+comments shouldn't explain what your code does. Your code should explain it
+docstrings not necessary for non public methods
+comments after def line
+""" on a line by itself unless it's a one-liner
+naming conventions
+use a trailing underscore to avoid a conflict with Python keyword
+leading dunderscore for name mangling
+leading and trailing dunderscore = magic
+leading wonderscore for weak internal use
+don't use single character
+nver use l O I
+module names short all lowercase names with underscores
+package names should have short lowercase names without underscores
+leading underscore for a module if written in C or C++
+Classes have CapWords
+exception names should have Error after it and be CapWords
+functions should be snake case
+self, cls as the first arguments
+if there's an overlap for naming use trailing underscore
+constants in capitals
+comparison to singletons like None should be done with is
+use best option so as not to hurt other implementations (''.join())
+use "starts with " rather than slicing
+use is not rather than not is
+if you implement one of the ordering operators implement all of them
+use def rather than lambda so you have access to the name
+derive exceptions from Exception rather than BaseException
+BaseException is for when it's wrong to catch the exception
+don't have general exceptions
+don't put extra code in a try statement
+explicitly return None in your functions
+use "starts with "
+use isinstance rather than type == type
+use the fact that things are truthy and falsey
+
+
+
+
+
+higher-order programming
+enums
+__repr__ vs __str__
+dictionary sorting by value
+sh module
+return multiple values
+decorators
+python -m pdb run.py
+global keyword
+------- check your memrise -------
+using __slots__ for fixed class attributes to save on RAM
+class enums and subclassed enums
+type
+try except finally
+instance vs class variables
+constants in capitals
+PEP8
+yield, coroutines, and send
+function caching with functools lru_cache
+class methods and class variables and static methods
+interactive shell sciprts
+From tqdm import tqdm
+Making your Python talk to you
+
+
+dir
+operator overloading
+string reversion
+chained function calls over multiple lines for readability
+for then else
+case switch
+multi-line strings
+regex
+more_itertools
+reversing a string several ways
+finding the most frequent element in a list
+deque for limited history recognition
+heapq's n largest or n smallest
+tuple, list comparison
+how to do a priority queue in python
+function defaults
+magic methods
+sorted keys
+flask dance for oauth authentication
+dict.items(), dict.keys(), dict.values()
+delete variable from namespace with foo
+with _ as _:
+abs()
+bin()
+bool()
+breakpoint()
+complex()
+eval()
+globals()
+frozenset()
+help()
+id()
+input()
+isinstance()
+issubclass()
+iter()
+next()
+oct()
+open()
+ord()
+pow()
+reversed()
+map()
+filter()
+reduce()
+dis.dis to dissect a function and see its CPython implementation
+@property and @.setter
+cls instead of self
+you can use python as part of a pipe using python -c 'expression'
+
+
+modules
+-------
+abc - abstract base classes
+argparse - command line options
+array - space efficient arrays
+aynscio - asynchronous I/O
+audioop - audio data manipulation
+calendar
+cmath - maths for complex numbers
+cmd - supports line-oriented command interpreters
+colorsys - colour changing
+collections
+contextlib
+copy - deep and shallow
+csv
+datetime
+decimal
+difflib
+dis
+doctest
+dataclasses
+email
+enum
+filecmp
+fileinput
+fractions
+functools
+gc
+hashlib
+heapq
+html
+http
+imghdr
+io
+itertools
+json
+keyword
+lib2to3
+linecache
+logging
+locale
+math
+numbers
+operator
+os
+pdb
+pickle
+pprint
+queue
+random
+re
+sched
+secret
+shelve
+sndhdr
+sqlite3
+statistics
+string
+sys
+tempfile
+test
+textwrap
+threading
+time
+timeit
+tkinter
+turtle
+typing
+unittest
+urllib
+venv
+cProfile to check for bottlenecks
+
+Non-standard packages and modules
+geopy
+bashplotlib
+flask dance
+
+AntiPatterns
